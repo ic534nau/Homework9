@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Ivans Portfolio</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+
+<header class=" "bg-primary bg-gradient>
+    <div class="container">
+        <div class="row my-2">
+        <div class="col">
+            <p id="greeting"></p>
+            <h1> Ivan Calderon</h1>
+            <h2> Information Technology Student</h2>
+        </div>
+        </div>
+    </div>
+</header>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand" href="#">Ivans Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navMenu"></ul>
+       <a id="downloadResume" href="ivan_calderon_resume.pdf" class="btn btn-primary" target="_blank">
+                Download Resume
+        </a>
+        <p>Resume downloads: <span id="downloadCount">0</span></p>
+    </div>
+  </div>
+</nav>
+<main>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 col-md-6">
+            <h2 id="about">About me</h2>
+            <p>I was born and raised in Sedona, Arizona. I'm currently pursuing a <b>Bachelor's degree</b> in <b>Information Technology</b> at <u>Northern Arizona University</u>. I have always had an aptitude for technology. Outside of school I have managed to acquire a few certifications to get ahead. These have helped me gain valuable experience to get my foot in the door. My goal after I graduate is to work in <b>Network Engineering</b> where i will gain the skills necessary to transition into <b>Cybersecurity</b>. In my free time I enjoy reading, bowling, and watching movies. I am also bilingual in English and Spanish. My favorite place to study is at a coffee shop</p>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+        <div class="col-12 col-md-6">
+            <h2 id="skills">Skills</h2>
+                        <ul class="skills" id="skillsList">
+                <li>CompTIA A+</li>
+                <li>CompTIA Network+</li>
+                <li>Cisco Certified Network Associate <small>(CCNA)</small></li>
+            </ul>
+            <input type="text" id="skillInput" placeholder="Enter a new skill">
+            <button type="button" id="addSkillButton">Add Skill</button>
+        </div>
+        <div class=" col-12 col-md-6">
+            
+            <h2 id="projects">Projects</h2>
+            <button type="button" id="sortProjectsButton">Sort by Deadline</button>
+            <div id="projectsList"></div>
+
+        </div>
+        </div>
+
+    <div class="row mt-5">
+    <div class="col-12 col-md-6">
+        <h2 id="education">Education</h2>
+      <div id="educationTable"></div>
+</div>
+</div>
+
+
+
+    <div class="col-12 col-md-6">
+        <h2 id="experience">Experience</h2>
+       <div id="experienceTable"></div>
+    </div>
+</div>
+</main>
+<footer class="bg-dark bg-gradient text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 id="contact">Contact</h2>
+                <p>Email: <a href="mailto:ivancalderon9@gmail.com">ivancalderon9@gmail.com</a></p>
+                <p>Phone: <a href="tel:(928) 862-0078">(928) 862-0078</a></p>
+                <p>GitHub: <a href="https://github.com/ic534nau">GitHub</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
